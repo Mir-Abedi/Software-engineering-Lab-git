@@ -32,6 +32,31 @@
 ## ساخت یک صفحه static
 
 ## ساخت action و CI
+برای اینکه یک CI ابتدایی برای پروژه ایجاد کرده باشیم، یک Workflow جدید برای چک کردن تایتل کامیت‌ها استفاده می‌کنیم. به همین منظور ابتدا در پروژه یک فایل 
+`commit-message-check.yml`
+در پوشه 
+`.github/workflows`
+ایجاد می‌کنیم و کانفیگ مورد نظر خورد را در آن با توجه به سینتکس گیتهاب اضافه می‌کنیم. برای مشاهده این کانفیگ به مسیر گفته شده مراجعه کنید. با اضافه شدن این workflow به پایپ‌لاین‌های مخزن گیتهاب از این به بعد نیاز داریم کامیت‌های خود را با یکی از تایتل‌های feat، fix، chore، refactor یا docs استفاده کنیم. نمونه‌هایی از تایتل یک کامیت صحیح و ناصحیح در زیر نوشته شده:
+
+```
+Valid Commit Message:
+
+
+1. fix: correct typo in documentation
+2. feat: add new user authentication feature
+3. refactor: improve code structure in user service
+4. fix: resolve issue with login functionality
+5. chore: update dependencies
+6. docs: update README file
+
+
+Invalid Commit Message:
+
+
+1. update: change button color
+2. bugfix: fix issue with data fetching
+3. style: format code according to style guide
+```
 
 ## پرسش‌ها
 1. پاسخ
