@@ -23,6 +23,9 @@
 - شاخه hotfix برای درست کردن اضطراری باگ‌های موجود است.
 
 ## محافظت کردن شاخه main
+برای اینکه شاخه main همواره stable باشد، این شاخه را محافظت‌شده می‌کنیم. برای اینکار در مخزن به تنظیمات می‌رویم و بعد در بخش rules یک protection rule برای این شاخه تعریف می‌کنیم و گزینه Require a pull request before merging را فعال می‌کنیم.
+
+![protection first pic](pics/protection.jpg)
 
 ## برطرف کردن ۲ conflict
 
