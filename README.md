@@ -1,6 +1,10 @@
 # گزارش کار آزمایش اول آز نرم افزار
 
 ## gitignore
+برای ساخت .gitignore از ابزارهای آماده‌ای که برای اینکار وجود دارند استفاده می‌کنیم. وجود این فایل باعث می‌شود که فایل‌هایی که اسم و یا مسیری با یک الگوری مشخص دارند فیلتر شوند و وارد ریپازیتوری نشوند. مثالی از این نوع فایل‌ها، فایل‌های سیستم عاملی است که در اینجا با استفاده از (این لینک)[End of https://www.toptal.com/developers/gitignore/api/macos,windows] این نوع فایل‌های سیستمی را فیلتر می‌کنیم.
+
+![gitignore first pic](pics/gitignore1.jpg)
+![gitignore second pic](pics/gitignore2.jpg)
 
 ## README.md
 
