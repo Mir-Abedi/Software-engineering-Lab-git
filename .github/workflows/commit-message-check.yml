@@ -1,0 +1,29 @@
+name: Commit Message Check
+
+on: [push]
+
+jobs:
+  check-commit-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Get commit messages
+        run: |
+          COMMIT_MESSAGES=$(git log --oneline -n 10)
+          echo "$COMMIT_MESSAGES"
+        id: get-commit-messages
+
+      - name: Check commit messages
+        run: |
+          ALLOWED_PREFIXES="fix|feat|refactor|chore|docs"
+          for COMMIT in $(echo "$COMMIT_MESSAGES" | cut -d' ' -f2-); do
+            if [[ ! $COMMIT =~ ^($ALLOWED_PREFIXES) ]]; then
+              echo "Invalid commit message: $COMMIT"
+              exit 1
+            fi
+          done
+        env:
+          COMMIT_MESSAGES: ${{ steps.get-commit-messages.outputs.COMMIT_MESSAGES }}
+
