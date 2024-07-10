@@ -1,0 +1,7 @@
+this file was added in order to create conflict.
+you need to resolve conflicts before merging them.
+resolving conflicts has some steps.
+first you need to find out what changes should be kept and what others should be removed.
+if you dont do so, you will not be able to merge two branches.
+then it will be very easy.
+git has many good tools for resolving conflicts.
