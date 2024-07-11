@@ -1,4 +1,5 @@
 # گزارش کار آزمایش اول آز نرم افزار
+[سایت نهایی](https://mir-abedi.github.io/Software-engineering-Lab-git/)
 
 ## gitignore
 برای ساخت .gitignore از ابزارهای آماده‌ای که برای اینکار وجود دارند استفاده می‌کنیم. وجود این فایل باعث می‌شود که فایل‌هایی که اسم و یا مسیری با یک الگوری مشخص دارند فیلتر شوند و وارد ریپازیتوری نشوند. مثالی از این نوع فایل‌ها، فایل‌های سیستم عاملی است که در اینجا با استفاده از [این لینک](https://www.toptal.com/developers/gitignore/api/macos,windows) این نوع فایل‌های سیستمی را فیلتر می‌کنیم.
@@ -11,6 +12,9 @@
 ![readme first pic](pics/readme.jpg)
 
 ## ۲۰ کامیت معنادار
+بر روی برنچ main بیش از ۲۰ کامیت معنادار وجود دارد که چندتا از آن‌ها کامیت‌های مرج و بقیه کامیت‌های معناداری هستند که تغییراتی را اعمال کرده‌اند. همینطور بر روی برنچ‌های دیگر مانند dev نیز تغییرات معناداری وجود دارد که بعدا در main مرج شده‌اند.
+<img width="1353" alt="image" src="https://github.com/Mir-Abedi/Software-engineering-Lab-git/assets/73402569/a1576af7-1b12-471d-9115-9e27e958f9ee">
+
 
 ## ساخت برنچ‌های مختلف
 قابلیت ایجاد شاخه‌های مختلف یکی از قابلیت‌های قوی گیت می‌باشد. این قابلیت این کمک را به توسعه‌دهندگان مختلف ارائه می‌دهد که بتوانند همزمان و در یک محیط ایزوله مستقل از دیگر محیط‌ها کد بزنند. همچنین این مزیت را هم دارد که شاخه اصلی می‌تواند باثبات باشد. برای ساخت شاخه جدید هم از GUI می‌توانیم این کار را انجام دهیم و هم از ترمینال
@@ -28,6 +32,18 @@
 ![protection first pic](pics/protection.jpg)
 
 ## برطرف کردن ۲ conflict
+برای ایجاد conflict دو برنچ conflict-1/2 را می‌سازیم و سعی می‌کنیم کانفلیکت ایجاد کنیم که در ادامه آن‌ها را رفع کنیم.
+![](https://github.com/Mir-Abedi/Software-engineering-Lab-git/assets/73402569/005bdbd8-73bb-4785-bd5b-7b7e5ff2e373)
+![](https://github.com/Mir-Abedi/Software-engineering-Lab-git/assets/73402569/a6b8e17f-dc41-433d-8735-96f659dba8c5)
+![](https://github.com/Mir-Abedi/Software-engineering-Lab-git/assets/73402569/abc09868-ba3c-4359-bdd1-a164766256bd)
+![](https://github.com/Mir-Abedi/Software-engineering-Lab-git/assets/73402569/e2b54f05-c4e3-49c3-885d-0c3889bfcfe8)
+![](https://github.com/Mir-Abedi/Software-engineering-Lab-git/assets/73402569/6eef7f4b-abaa-472b-a967-55553291c926)
+در روش بالا به صورت دستی انتخاب کردیم که از هر HEAD چه محتویاتی نگه داشته شود. در روش بعدی با انتخاب accept yours فقط تغییرات نسخه فعلی را نگه می‌داریم و بقیه تغییرات را نادیده می‌گیریم.
+
+![](https://github.com/Mir-Abedi/Software-engineering-Lab-git/assets/73402569/41dce01f-ad76-470b-ba5f-b69b4a437cc6)
+![](https://github.com/Mir-Abedi/Software-engineering-Lab-git/assets/73402569/c7e18e07-51d4-4b98-903d-3a6cb89be3d6)
+![](https://github.com/Mir-Abedi/Software-engineering-Lab-git/assets/73402569/372a19dd-7e84-4fe7-8bf5-b152cd925663)
+
 
 ## ساخت یک صفحه static
 در ابتدا یک برنچ جدید از برنچ dev جدا می‌کنیم که کار‌های ساخت وبسایت را بر روی آن انجام دهیم. در ابتدا یک صفحه خیلی ساده با یک دکمه لاگین می‌سازیم که هیچ فانکشنالیتی هنوز ندارد.
@@ -39,6 +55,19 @@
 با موفقیت با dev مرج شد و حالا می‌توانیم برای زدن pull request آماده باشیم.
 
 ## ساخت pull request برای merge با main
+همانطور که در قسمت قبل دیدیم اول برنچ جدید ساخته شده را با dev مرج کردیم. حال چون main محافظت شده است باید با ساختن یک pull request برنچ dev را با برنچ اصلی ادغام کنیم.
+![](https://github.com/Mir-Abedi/Software-engineering-Lab-git/assets/73402569/07044c78-0efa-470d-b85d-3f695f1d2a3c)
+![](https://github.com/Mir-Abedi/Software-engineering-Lab-git/assets/73402569/8bd93d57-38b9-4c62-b540-f1a3808e1759)
+
+سپس از یکی از اعضای تیم می‌خواهیم که کار review و merge را انجام دهد. ممکن است در این راه تغییراتی هم لازم باشد.
+![](https://github.com/Mir-Abedi/Software-engineering-Lab-git/assets/73402569/3dc7b0c4-305f-4335-ab6b-71e40f6d5968)
+
+تغییرات خواسته شده را اعمال می‌کنیم و در dev کامیت می‌کنیم. حال بار دیگر درخواست review و merge می‌دهیم. این بار با موفقیت برنچ dev در main مرج می‌شود. 
+![](https://github.com/Mir-Abedi/Software-engineering-Lab-git/assets/73402569/fd8e60a8-90d5-4c48-ba65-eb1d07b1c329)
+
+
+حال تمامی فایل‌های لازم برای داشتن یک سایت static در دسترس می‌باشد فقط باید action لازم را تعیین کنیم.
+
 
 ## ساخت action و CI
 برای اینکه یک CI ابتدایی برای پروژه ایجاد کرده باشیم، یک Workflow جدید برای چک کردن تایتل کامیت‌ها استفاده می‌کنیم. به همین منظور ابتدا در پروژه یک فایل 
@@ -67,6 +96,53 @@ Invalid Commit Message:
 3. style: format code according to style guide
 ```
 
+در آخر به یک اکشن دیگر هم نیاز داریم تا هر تغییری بر روی main بر روی سرور deploy شود. برای این کار از اکشن static HTML استفاده می‌کنیم که به صورت زیر است
+```
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+با استفاده از این workflow هر تغییراتی در برنچ main بر روی [سایت](https://mir-abedi.github.io/Software-engineering-Lab-git/) اعمال می‌شود.
 ## پرسش‌ها
 1.
 در این پوشه تمامی اطلاعاتی که گیت نیاز دارد تا بداند چه تغییراتی در کدبیس ایجاد شده است نگه‌داری می‌شود و یک بخش اساسی از گیت است. هنگامی که یک مخزن درست می‌شود پوشه .git در همان پوشه ایجاد می‌شود. در این پوشه فایل‌ها و پوشه‌های مختلفی وجود دارد که در میان فایل‌های آن HEAD, ORIG_HEAD, FETCH_HEAD, index, description قرار دارند. هرکدام از فایل‌های HEAD بسته به پیشوند آن‌ها هش sha256 از جایی که به آن اشاره دارند را نگه می‌دارند. به طور مثال فایل HEAD مربوط به پوشه لوکال می‌باشد و در هنگام checkout تغییر می‌کند.
